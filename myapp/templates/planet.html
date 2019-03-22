@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>{{ planet.name }}</h1>
+
+<p>Periodo de rotación: {{ planet.rotation_period }}</p>
+<p>Periodo de orbitación: {{ planet.orbital_period }}</p>
+<p>Diametro: {{ planet.diameter }}</p>
+<p>Clima: {{ planet.climate }}</p>
+<p>Gravedad: {{ planet.gravity }}</p>
+<p>Terreno: {{ planet.terrain }}</p>
+<p>Agua superficial: {{ planet.surface_water }}</p>
+<p>Población: {{ planet.population }}</p>
+
+<h3>Peliculas:</h3>
+{% for film in films %}
+<p><a href="../film/?url={{ film.url }}">{{ film.title }}</a></p>
+{% endfor %}
+
+<h3>Residentes:</h3>
+{% for resident in residents %}
+<p><a href="../actor/?url={{ resident.url }}">{{ resident.name }}</a></p>
+{% endfor %}
+
+</body>
+</html>

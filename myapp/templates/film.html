@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>{{ pelicula.title }}</h1>
+<h1>{{ pelicula.ano }}</h1>
+
+<p>{{ pelicula.opening }}</p>
+<p>Director: {{ pelicula.director }}</p>
+<p>Productor(es): {{ pelicula.producer }}</p>
+
+<h3>Actores:</h3>
+{% for actor in actores %}
+<p><a href="../actor/?url={{ actor.url }}">{{ actor.name }}</a>,</p>
+{% endfor %}
+
+<h3>Planetas:</h3>
+{% for planet in planets %}
+<p><a href="../planet/?url={{ planet.url }}">{{ planet.name }}</a>,</p>
+{% endfor %}
+
+<h3>Naves:</h3>
+{% for ship in ships %}
+<p><a href="../ship/?url={{ ship.url }}">{{ ship.name }}</a>,</p>
+{% endfor %}
+
+</body>
+</html>
