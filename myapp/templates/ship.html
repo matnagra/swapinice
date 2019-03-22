@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% extends 'base.html' %}
+{% block content %}
 
 <h1>{{ ship.name }}</h1>
 
@@ -27,5 +26,4 @@
 <p><a href="../film/?url={{ peli.url }}">{{ peli.title }}</a>,</p>
 {% endfor %}
 
-</body>
-</html>
+{% endblock %}

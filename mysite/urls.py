@@ -24,4 +24,5 @@ urlpatterns = [
     path('actor/', views.actor),
     path('ship/', views.ship),
     path('planet/', views.planet),
+    path('search/', views.search),
 ]

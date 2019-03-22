@@ -1,3 +1,0 @@
-{% for film in data[0]['results'] %}
-    <p>{{ film['title'] }}</p>
-{% endfor %}
