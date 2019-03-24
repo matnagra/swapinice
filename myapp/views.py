@@ -21,6 +21,7 @@ class Actor:
   def load_actor(self, actor):
     self.height = actor['height']
     self.mass = actor['mass']
+    self.hair = actor['hair_color']
     self.skin = actor['skin_color']
     self.eye = actor['eye_color']
     self.birth = actor['birth_year']
